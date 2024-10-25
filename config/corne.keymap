@@ -33,13 +33,13 @@
 // |   TAB    |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |   -    |
 // |   ALT    |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |   '    |
 // | SHFT/ESC |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  | SHFT/` |
-//          | GUI | LWR/BSPC/DEL | CTRL/SPC  |   | ENT | RSE  | ALT |
+//          | GUI | LWR/BSPC/DEL | CTRL/SPC  |   | ENT | RSE  | CTL |
                         display-name = "Base";
                         bindings = <
    &kp TAB       &kp Q &kp W &kp E    &kp R        &kp T                &kp Y   &kp U   &kp I     &kp O   &kp P    &kp MINUS
    &kp LALT      &kp A &kp S &kp D    &kp F        &kp G                &kp H   &kp J   &kp K     &kp L   &kp SEMI &kp SQT
    &mt LSHFT ESC &kp Z &kp X &kp C    &kp V        &kp B                &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &mt RSHIFT GRAVE
-                             &kp LGUI &lt_bspc 1 0 &mt LCTRL SPACE      &kp RET &mo 2   &kp RALT
+                             &kp LGUI &lt_bspc 1 0 &mt LCTRL SPACE      &kp RET &mo 2   &kp RCTRL
                         >;
                 };
                 lower_layer {
