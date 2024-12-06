@@ -52,14 +52,14 @@
             // |   TAB    |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |   -    |
             // |   ALT    |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |   '    |
             // | SHFT/ESC |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  | SHFT/` |
-            //          | GUI | LWR/BSPC/DEL | CTRL/SPC  |   | ENT | RSE  | CTL |
+            //          | GUI | LWR/BSPC/DEL | CTRL/SPC  |   | ENT | RSE  | ALT |
 
             display-name = "Base";
             bindings = <
 &kp TAB        &kp Q  &kp W  &kp E     &kp R         &kp T               &kp Y    &kp U  &kp I      &kp O    &kp P     &kp MINUS
 &kp LALT       &kp A  &kp S  &kp D     &kp F         &kp G               &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &mt LSHFT ESC  &kp Z  &kp X  &kp C     &kp V         &kp B               &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT GRAVE
-                             &kp LGUI  &lt_bspc 1 0  &rpi LCTRL SPACE    &kp RET  &mo 2  &kp RCTRL
+                             &kp LGUI  &lt_bspc 1 0  &rpi LCTRL SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -84,14 +84,14 @@
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    | GUI |     | SPC |   | ENT |     |     |
 
             display-name = "Raise";
             bindings = <
 &trans  &kp EXCL &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &trans   &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &trans   &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                &trans    &to 3     &trans       &trans     &trans     &kp RALT
+                                &trans    &to 3     &trans       &trans     &trans     &trans
             >;
         };
 
